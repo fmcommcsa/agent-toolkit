@@ -4,17 +4,11 @@
 
 ## 설치
 
-### npx skills (Claude Code, Cursor, Gemini CLI 등)
-
 ```bash
 npx skills add fmcommcsa/agent-toolkit -g
 ```
 
-### Claude Code 플러그인
-
-```bash
-claude install github:fmcommcsa/agent-toolkit
-```
+Claude Code, Cursor, Gemini CLI, OpenCode, Kiro CLI 등 주요 에이전트 도구에 자동 연결됩니다.
 
 ## 스킬 목록
 
@@ -26,15 +20,8 @@ claude install github:fmcommcsa/agent-toolkit
 
 ```
 agent-toolkit/
-├── skills/                    # npx skills add 용
+├── skills/
 │   └── <skill-name>/
 │       └── SKILL.md
-├── plugins/                   # claude install 용
-│   └── <skill-name>/
-│       ├── .claude-plugin/
-│       │   └── plugin.json
-│       └── skills/
-│           └── <skill-name>/
-│               └── SKILL.md
 └── README.md
 ```

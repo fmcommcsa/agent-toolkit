@@ -1,8 +1,0 @@
-{
-  "name": "markdown-fetcher",
-  "description": "웹 URL을 markdown.new 프록시를 통해 마크다운으로 변환하여 분석하는 스킬",
-  "author": {
-    "name": "Byeonghee Jang",
-    "email": "orangefl@gmail.com"
-  }
-}
