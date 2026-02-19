@@ -4,8 +4,21 @@
 
 ## 설치
 
+### 전체 설치
+
 ```bash
 npx skills add fmcommcsa/agent-toolkit -g
+```
+
+### 개별 스킬 설치
+
+```bash
+npx skills add fmcommcsa/agent-toolkit -g -s <skill-name>
+```
+
+```bash
+# 예시
+npx skills add fmcommcsa/agent-toolkit -g -s markdown-fetcher
 ```
 
 Claude Code, Cursor, Gemini CLI, OpenCode, Kiro CLI 등 주요 에이전트 도구에 자동 연결됩니다.
