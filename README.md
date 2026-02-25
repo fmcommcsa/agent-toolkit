@@ -2,34 +2,13 @@
 
 팀 공용 AI 에이전트 도구 모음입니다.
 
-## 설치
-
-### 전체 설치
-
-```bash
-npx skills add fmcommcsa/agent-toolkit -g
-```
-
-### 개별 스킬 설치
-
-```bash
-npx skills add fmcommcsa/agent-toolkit -g -s <skill-name>
-```
-
-```bash
-# 예시
-npx skills add fmcommcsa/agent-toolkit -g -s markdown-fetcher
-```
-
-Claude Code, Cursor, Gemini CLI, OpenCode, Kiro CLI 등 주요 에이전트 도구에 자동 연결됩니다.
-
 ## 스킬 목록
 
 자체 스킬:
 
-| 스킬             | 설명                                                           |
-| ---------------- | -------------------------------------------------------------- |
-| markdown-fetcher | 웹 URL을 markdown.new 프록시를 통해 마크다운으로 변환하여 분석 |
+| 스킬                 | 설명                                                               |
+| -------------------- | ------------------------------------------------------------------ |
+| ~~markdown-fetcher~~ | ~~웹 URL을 markdown.new 프록시를 통해 마크다운으로 변환하여 분석~~ |
 
 추천 외부 스킬 전체 목록은 [SKILL-CATALOG.md](./SKILL-CATALOG.md)를 참고하세요.
 
