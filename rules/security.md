@@ -14,17 +14,18 @@
 
 ```typescript
 // NEVER: 하드코딩된 비밀값
-const apiKey = "sk-xxxxx"
-const password = "admin123"
+const apiKey = "sk-xxxxx";
+const password = "admin123";
 
 // ALWAYS: 환경변수 사용
-const apiKey = process.env.API_KEY
-if (!apiKey) throw new Error('API_KEY not configured')
+const apiKey = process.env.API_KEY;
+if (!apiKey) throw new Error("API_KEY not configured");
 ```
 
 ## 민감 파일
 
 커밋하지 말 것:
+
 - `.env`, `.env.*`
 - `credentials.json`
 - `*.pem`, `*.key`

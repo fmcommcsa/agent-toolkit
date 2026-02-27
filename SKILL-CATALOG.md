@@ -14,19 +14,117 @@ npx skills add <repo> -g -s <skill-name> -y
 
 ---
 
-## 자체 스킬
+## 자체 스킬 (현재 미운영, [fmcommcsa/agent-toolkit](https://github.com/fmcommcsa/agent-toolkit))
 
-```bash
-npx skills add fmcommcsa/agent-toolkit -g
-```
-
-| 스킬             | 설명                                                           |
-| ---------------- | -------------------------------------------------------------- |
-| markdown-fetcher | 웹 URL을 markdown.new 프록시를 통해 마크다운으로 변환하여 분석 |
+현재 자체(내부) 스킬은 제공하지 않습니다.
 
 ---
 
-## Azure (`microsoft/GitHub-Copilot-for-Azure`)
+## Anthropic ([anthropics/skills](https://github.com/anthropics/skills))
+
+```bash
+npx skills add anthropics/skills -g -s <skill-name> -y
+```
+
+| 스킬                  | 설명                                               | 추천 직무      |
+| --------------------- | -------------------------------------------------- | -------------- |
+| doc-coauthoring       | 문서 공동 작성 워크플로(컨텍스트 수집/구조화/리뷰) | 기획           |
+| docx                  | Word 문서(.docx) 생성/편집/분석                    | 기획           |
+| frontend-design       | 프로덕션급 프론트엔드 UI 구현                      | 디자인, 프론트 |
+| mcp-builder           | MCP 서버 빌드 가이드 (Python/TypeScript)           | 백엔드         |
+| pdf                   | PDF 읽기/추출/병합/분할/OCR 등 처리                | 기획, 백엔드   |
+| pptx                  | 프레젠테이션(.pptx) 생성/편집/분석                 | 기획, 디자인   |
+| skill-creator         | 스킬 생성/개선/평가/트리거 최적화                  | 백엔드, 프론트 |
+| web-artifacts-builder | React/Tailwind/shadcn 기반 HTML 아티팩트 빌드      | 프론트, 디자인 |
+| xlsx                  | 스프레드시트(.xlsx/.xlsm/.csv/.tsv) 생성/편집/정리 | 기획, 백엔드   |
+
+---
+
+## OpenAI Curated ([openai/skills](https://github.com/openai/skills/tree/main/skills/.curated))
+
+```bash
+npx skills add openai/skills -g -s <skill-name> -y
+```
+
+| 스킬                   | 설명                           | 추천 직무      |
+| ---------------------- | ------------------------------ | -------------- |
+| gh-address-comments    | GitHub 리뷰 코멘트 반영        | 프론트, 백엔드 |
+| gh-fix-ci              | CI 실패 원인 분석 및 수정      | 프론트, 백엔드 |
+| screenshot             | 웹/결과물 스크린샷 캡처        | 디자인, 프론트 |
+| security-ownership-map | 보안 책임/오너십 매핑          | 기획, 백엔드   |
+| security-threat-model  | 위협 모델링 및 리스크 분석     | 백엔드, 기획   |
+| sentry                 | Sentry 기반 에러 모니터링/분석 | 프론트, 백엔드 |
+| sora                   | 영상 생성 워크플로             | 디자인, 기획   |
+| speech                 | 음성 합성/처리                 | 백엔드         |
+| transcribe             | 음성/영상 전사                 | 기획, 백엔드   |
+| vercel-deploy          | Vercel 배포 자동화             | 프론트         |
+| yeet                   | 반복 작업 자동화 보조          | 프론트, 백엔드 |
+
+---
+
+## 개발 패턴 ([sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills))
+
+```bash
+npx skills add sickn33/antigravity-awesome-skills -g -s <skill-name> -y
+```
+
+| 스킬                          | 설명                                               | 추천 직무      |
+| ----------------------------- | -------------------------------------------------- | -------------- |
+| api-documentation             | OpenAPI 명세, 개발자 가이드, 코드 예제 문서화      | 기획, 백엔드   |
+| api-design-principles         | REST/GraphQL API 설계 원칙                         | 백엔드, 프론트 |
+| api-security-testing          | REST/GraphQL API 인증/인가/입력검증 보안 테스트    | 백엔드         |
+| api-security-best-practices   | API 인증, 인가, 입력 검증, Rate Limiting           | 백엔드         |
+| architecture-decision-records | ADR 기반 기술 의사결정 기록/추적                   | 기획, 백엔드   |
+| auth-implementation-patterns  | JWT/OAuth2/세션/RBAC 인증·인가 구현 패턴           | 백엔드, 프론트 |
+| azure-functions               | Azure Functions 개발 패턴 (Durable Functions 포함) | 백엔드         |
+| backend-architect             | 확장 가능한 백엔드 아키텍처 설계                   | 백엔드         |
+| backend-security-coder        | 백엔드 보안 코딩 및 코드 리뷰                      | 백엔드         |
+| clean-code                    | 간결하고 실용적인 코딩 표준                        | 프론트, 백엔드 |
+| code-review-excellence        | 효과적인 코드 리뷰 실천법                          | 프론트, 백엔드 |
+| database-architect            | 데이터베이스 설계, 기술 선택, 스키마 모델링        | 백엔드         |
+| database-migration            | 스키마 변경, 데이터 이행, 롤백/무중단 마이그레이션 | 백엔드         |
+| debugging-strategies          | 체계적 디버깅 및 프로파일링 기법                   | 프론트, 백엔드 |
+| docker-expert                 | Docker 멀티스테이지 빌드, 이미지 최적화, 보안      | 백엔드         |
+| error-handling-patterns       | 에러 핸들링, Result 타입, 복원력 패턴              | 프론트, 백엔드 |
+| microservices-patterns        | 마이크로서비스 아키텍처 및 이벤트 기반 패턴        | 백엔드         |
+| nestjs-expert                 | NestJS 모듈 아키텍처, DI, 미들웨어, 테스트         | 백엔드         |
+| sql-optimization-patterns     | SQL 쿼리 최적화, 인덱싱, EXPLAIN 분석              | 백엔드         |
+| testing-patterns              | Jest 기반 단위 테스트, 팩토리/목킹/TDD 패턴        | 프론트, 백엔드 |
+| typescript-expert             | TypeScript 타입 프로그래밍, 성능, 모노레포         | 프론트, 백엔드 |
+
+---
+
+## Vercel ([vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser), [vercel-labs/next-skills](https://github.com/vercel-labs/next-skills), [vercel-labs/skills](https://github.com/vercel-labs/skills))
+
+```bash
+# agent-skills
+npx skills add vercel-labs/agent-skills -g -s <skill-name> -y
+
+# agent-browser
+npx skills add vercel-labs/agent-browser -g -s <skill-name> -y
+
+# next-skills
+npx skills add vercel-labs/next-skills -g -s <skill-name> -y
+
+# skills
+npx skills add vercel-labs/skills -g -s <skill-name> -y
+```
+
+| 스킬                        | 레포          | 설명                                     | 추천 직무      |
+| --------------------------- | ------------- | ---------------------------------------- | -------------- |
+| vercel-composition-patterns | agent-skills  | React 합성 패턴 (Compound Components 등) | 프론트         |
+| vercel-react-best-practices | agent-skills  | React/Next.js 성능 최적화 가이드라인     | 프론트         |
+| vercel-react-native-skills  | agent-skills  | React Native/Expo 모바일 앱 개발         | 프론트         |
+| web-design-guidelines       | agent-skills  | Web Interface Guidelines 기반 UI 리뷰    | 디자인, 프론트 |
+| agent-browser               | agent-browser | AI 에이전트용 브라우저 자동화 CLI        | 프론트, 백엔드 |
+| next-best-practices         | next-skills   | Next.js 파일 규칙, RSC, 데이터 패턴      | 프론트         |
+| next-cache-components       | next-skills   | Next.js 16 Cache Components/PPR 최적화   | 프론트         |
+| next-upgrade                | next-skills   | Next.js 버전 업그레이드 가이드/코드모드  | 프론트         |
+| find-skills                 | skills        | 스킬 검색 및 설치 도우미                 | 기획, 프론트   |
+
+---
+
+## Azure ([microsoft/GitHub-Copilot-for-Azure](https://github.com/microsoft/GitHub-Copilot-for-Azure))
 
 ```bash
 npx skills add microsoft/GitHub-Copilot-for-Azure -g -s <skill-name> -y
@@ -56,97 +154,13 @@ npx skills add microsoft/GitHub-Copilot-for-Azure -g -s <skill-name> -y
 
 ---
 
-## 개발 패턴 (`sickn33/antigravity-awesome-skills`)
-
-```bash
-npx skills add sickn33/antigravity-awesome-skills -g -s <skill-name> -y
-```
-
-| 스킬                        | 설명                                               |
-| --------------------------- | -------------------------------------------------- |
-| api-design-principles       | REST/GraphQL API 설계 원칙                         |
-| api-security-best-practices | API 인증, 인가, 입력 검증, Rate Limiting           |
-| azure-functions             | Azure Functions 개발 패턴 (Durable Functions 포함) |
-| backend-architect           | 확장 가능한 백엔드 아키텍처 설계                   |
-| backend-security-coder      | 백엔드 보안 코딩 및 코드 리뷰                      |
-| clean-code                  | 간결하고 실용적인 코딩 표준                        |
-| code-review-excellence      | 효과적인 코드 리뷰 실천법                          |
-| database-architect          | 데이터베이스 설계, 기술 선택, 스키마 모델링        |
-| debugging-strategies        | 체계적 디버깅 및 프로파일링 기법                   |
-| docker-expert               | Docker 멀티스테이지 빌드, 이미지 최적화, 보안      |
-| e2e-testing-patterns        | Playwright/Cypress E2E 테스트 패턴                 |
-| error-handling-patterns     | 에러 핸들링, Result 타입, 복원력 패턴              |
-| microservices-patterns      | 마이크로서비스 아키텍처 및 이벤트 기반 패턴        |
-| nestjs-expert               | NestJS 모듈 아키텍처, DI, 미들웨어, 테스트         |
-| sql-optimization-patterns   | SQL 쿼리 최적화, 인덱싱, EXPLAIN 분석              |
-| typescript-expert           | TypeScript 타입 프로그래밍, 성능, 모노레포         |
-
----
-
-## Anthropic (`anthropics/skills`)
-
-```bash
-npx skills add anthropics/skills -g -s <skill-name> -y
-```
-
-| 스킬                  | 설명                                                   |
-| --------------------- | ------------------------------------------------------ |
-| algorithmic-art       | p5.js 기반 알고리즘/제너러티브 아트 생성               |
-| brand-guidelines      | Anthropic 브랜드 색상/타이포 스타일 적용               |
-| canvas-design         | 디자인 철학 기반 정적 비주얼(.png/.pdf) 제작           |
-| doc-coauthoring       | 문서 공동 작성 워크플로(컨텍스트 수집/구조화/리뷰)     |
-| docx                  | Word 문서(.docx) 생성/편집/분석                        |
-| frontend-design       | 프로덕션급 프론트엔드 UI 구현                          |
-| internal-comms        | 사내 커뮤니케이션 문서(업데이트/리포트/뉴스레터) 작성  |
-| mcp-builder           | MCP 서버 빌드 가이드 (Python/TypeScript)               |
-| pdf                   | PDF 읽기/추출/병합/분할/OCR 등 처리                    |
-| pptx                  | 프레젠테이션(.pptx) 생성/편집/분석                     |
-| skill-creator         | 스킬 생성/개선/평가/트리거 최적화                      |
-| slack-gif-creator     | Slack 최적화 GIF 생성/검증/압축                        |
-| theme-factory         | 테마(색상/폰트) 적용 및 커스텀 테마 생성               |
-| web-artifacts-builder | React/Tailwind/shadcn 기반 HTML 아티팩트 빌드          |
-| webapp-testing        | Playwright 기반 웹앱 테스트                            |
-| xlsx                  | 스프레드시트(.xlsx/.xlsm/.csv/.tsv) 생성/편집/정리     |
-
----
-
-## Vercel (`vercel-labs`)
-
-```bash
-# agent-skills
-npx skills add vercel-labs/agent-skills -g -s <skill-name> -y
-
-# agent-browser
-npx skills add vercel-labs/agent-browser -g -s <skill-name> -y
-
-# next-skills
-npx skills add vercel-labs/next-skills -g -s <skill-name> -y
-
-# skills
-npx skills add vercel-labs/skills -g -s <skill-name> -y
-```
-
-| 스킬                        | 레포          | 설명                                     |
-| --------------------------- | ------------- | ---------------------------------------- |
-| vercel-composition-patterns | agent-skills  | React 합성 패턴 (Compound Components 등) |
-| vercel-react-best-practices | agent-skills  | React/Next.js 성능 최적화 가이드라인     |
-| vercel-react-native-skills  | agent-skills  | React Native/Expo 모바일 앱 개발         |
-| web-design-guidelines       | agent-skills  | Web Interface Guidelines 기반 UI 리뷰    |
-| agent-browser               | agent-browser | AI 에이전트용 브라우저 자동화 CLI        |
-| skill-creator               | agent-browser | 스킬 생성 가이드                         |
-| next-best-practices         | next-skills   | Next.js 파일 규칙, RSC, 데이터 패턴      |
-| find-skills                 | skills        | 스킬 검색 및 설치 도우미                 |
-
----
-
-## 기타
+## 기타 ([browser-use/browser-use](https://github.com/browser-use/browser-use), [intellectronica/agent-skills](https://github.com/intellectronica/agent-skills))
 
 ```bash
 npx skills add browser-use/browser-use -g -y
 npx skills add intellectronica/agent-skills -g -s beautiful-mermaid -y
 ```
 
-| 스킬              | 레포                         | 설명                                             |
-| ----------------- | ---------------------------- | ------------------------------------------------ |
-| browser-use       | browser-use/browser-use      | 브라우저 자동화 (폼 입력, 스크린샷, 데이터 추출) |
-| beautiful-mermaid | intellectronica/agent-skills | Mermaid 다이어그램을 SVG/PNG로 렌더링            |
+| 스킬              | 레포                         | 설명                                  | 추천 직무    |
+| ----------------- | ---------------------------- | ------------------------------------- | ------------ |
+| beautiful-mermaid | intellectronica/agent-skills | Mermaid 다이어그램을 SVG/PNG로 렌더링 | 기획, 백엔드 |
