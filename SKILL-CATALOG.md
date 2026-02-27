@@ -77,11 +77,8 @@ npx skills add sickn33/antigravity-awesome-skills -g -s <skill-name> -y
 | architecture-decision-records | ADR 기반 기술 의사결정 기록/추적                   | 기획, 백엔드   |
 | auth-implementation-patterns  | JWT/OAuth2/세션/RBAC 인증·인가 구현 패턴           | 백엔드, 프론트 |
 | azure-functions               | Azure Functions 개발 패턴 (Durable Functions 포함) | 백엔드         |
-| backend-architect             | 확장 가능한 백엔드 아키텍처 설계                   | 백엔드         |
-| backend-security-coder        | 백엔드 보안 코딩 및 코드 리뷰                      | 백엔드         |
 | clean-code                    | 간결하고 실용적인 코딩 표준                        | 프론트, 백엔드 |
 | code-review-excellence        | 효과적인 코드 리뷰 실천법                          | 프론트, 백엔드 |
-| database-architect            | 데이터베이스 설계, 기술 선택, 스키마 모델링        | 백엔드         |
 | database-migration            | 스키마 변경, 데이터 이행, 롤백/무중단 마이그레이션 | 백엔드         |
 | debugging-strategies          | 체계적 디버깅 및 프로파일링 기법                   | 프론트, 백엔드 |
 | docker-expert                 | Docker 멀티스테이지 빌드, 이미지 최적화, 보안      | 백엔드         |
@@ -90,7 +87,6 @@ npx skills add sickn33/antigravity-awesome-skills -g -s <skill-name> -y
 | nestjs-expert                 | NestJS 모듈 아키텍처, DI, 미들웨어, 테스트         | 백엔드         |
 | sql-optimization-patterns     | SQL 쿼리 최적화, 인덱싱, EXPLAIN 분석              | 백엔드         |
 | testing-patterns              | Jest 기반 단위 테스트, 팩토리/목킹/TDD 패턴        | 프론트, 백엔드 |
-| typescript-expert             | TypeScript 타입 프로그래밍, 성능, 모노레포         | 프론트, 백엔드 |
 
 ---
 
@@ -121,36 +117,6 @@ npx skills add vercel-labs/skills -g -s <skill-name> -y
 | next-cache-components       | next-skills   | Next.js 16 Cache Components/PPR 최적화   | 프론트         |
 | next-upgrade                | next-skills   | Next.js 버전 업그레이드 가이드/코드모드  | 프론트         |
 | find-skills                 | skills        | 스킬 검색 및 설치 도우미                 | 기획, 프론트   |
-
----
-
-## Azure ([microsoft/GitHub-Copilot-for-Azure](https://github.com/microsoft/GitHub-Copilot-for-Azure))
-
-```bash
-npx skills add microsoft/GitHub-Copilot-for-Azure -g -s <skill-name> -y
-```
-
-| 스킬                        | 설명                                                   |
-| --------------------------- | ------------------------------------------------------ |
-| appinsights-instrumentation | Azure Application Insights 계측 가이드                 |
-| azure-ai                    | Azure AI Search, Speech, OpenAI, Document Intelligence |
-| azure-aigateway             | Azure API Management을 AI Gateway로 구성               |
-| azure-compliance            | Azure 보안 감사 및 컴플라이언스 평가                   |
-| azure-cost-optimization     | Azure 비용 최적화 분석 및 권장사항                     |
-| azure-deploy                | Azure 배포 실행 (azd up/deploy)                        |
-| azure-diagnostics           | Azure Container Apps 진단 및 로그 분석                 |
-| azure-kusto                 | Azure Data Explorer (Kusto) KQL 쿼리                   |
-| azure-messaging             | Azure Event Hubs, Service Bus SDK 트러블슈팅           |
-| azure-observability         | Azure Monitor, Application Insights, Log Analytics     |
-| azure-postgres              | Azure Database for PostgreSQL 설정 및 Entra ID 인증    |
-| azure-prepare               | Azure 앱 개발 준비 및 인프라 구성                      |
-| azure-rbac                  | Azure RBAC 역할 할당 및 최소 권한 설정                 |
-| azure-resource-lookup       | Azure 리소스 조회 및 목록                              |
-| azure-resource-visualizer   | Azure 리소스 그룹 Mermaid 아키텍처 다이어그램 생성     |
-| azure-storage               | Azure Blob, File, Queue, Table Storage                 |
-| azure-validate              | Azure 배포 전 사전 검증                                |
-| entra-app-registration      | Microsoft Entra ID 앱 등록 및 OAuth 설정               |
-| microsoft-foundry           | Microsoft Foundry AI 모델 배포 및 에이전트 관리        |
 
 ---
 
