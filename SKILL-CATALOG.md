@@ -89,11 +89,24 @@ npx skills add sickn33/antigravity-awesome-skills -g -s <skill-name> -y
 npx skills add anthropics/skills -g -s <skill-name> -y
 ```
 
-| 스킬            | 설명                                     |
-| --------------- | ---------------------------------------- |
-| frontend-design | 프로덕션급 프론트엔드 UI 구현            |
-| mcp-builder     | MCP 서버 빌드 가이드 (Python/TypeScript) |
-| webapp-testing  | Playwright 기반 웹앱 테스트              |
+| 스킬                  | 설명                                                   |
+| --------------------- | ------------------------------------------------------ |
+| algorithmic-art       | p5.js 기반 알고리즘/제너러티브 아트 생성               |
+| brand-guidelines      | Anthropic 브랜드 색상/타이포 스타일 적용               |
+| canvas-design         | 디자인 철학 기반 정적 비주얼(.png/.pdf) 제작           |
+| doc-coauthoring       | 문서 공동 작성 워크플로(컨텍스트 수집/구조화/리뷰)     |
+| docx                  | Word 문서(.docx) 생성/편집/분석                        |
+| frontend-design       | 프로덕션급 프론트엔드 UI 구현                          |
+| internal-comms        | 사내 커뮤니케이션 문서(업데이트/리포트/뉴스레터) 작성  |
+| mcp-builder           | MCP 서버 빌드 가이드 (Python/TypeScript)               |
+| pdf                   | PDF 읽기/추출/병합/분할/OCR 등 처리                    |
+| pptx                  | 프레젠테이션(.pptx) 생성/편집/분석                     |
+| skill-creator         | 스킬 생성/개선/평가/트리거 최적화                      |
+| slack-gif-creator     | Slack 최적화 GIF 생성/검증/압축                        |
+| theme-factory         | 테마(색상/폰트) 적용 및 커스텀 테마 생성               |
+| web-artifacts-builder | React/Tailwind/shadcn 기반 HTML 아티팩트 빌드          |
+| webapp-testing        | Playwright 기반 웹앱 테스트                            |
+| xlsx                  | 스프레드시트(.xlsx/.xlsm/.csv/.tsv) 생성/편집/정리     |
 
 ---
 

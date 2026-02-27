@@ -4,13 +4,9 @@
 
 ## 스킬 목록
 
-자체 스킬:
-
-| 스킬                 | 설명                                                               |
-| -------------------- | ------------------------------------------------------------------ |
-| ~~markdown-fetcher~~ | ~~웹 URL을 markdown.new 프록시를 통해 마크다운으로 변환하여 분석~~ |
-
-추천 외부 스킬 전체 목록은 [SKILL-CATALOG.md](./SKILL-CATALOG.md)를 참고하세요.
+이 레포는 현재 내부(자체) 스킬을 운영하지 않습니다.
+스킬 관리는 외부 스킬만 대상으로 하며, 기준 문서는 [SKILL-CATALOG.md](./SKILL-CATALOG.md)입니다.
+스킬 설치/업데이트는 카탈로그의 레포별 명령을 사용하세요.
 
 ## 구조
 
@@ -25,7 +21,7 @@ agent-toolkit/
 │   └── typescript-check.js
 ├── rules/
 │   └── security.md
-├── skills/
+├── skills/             # 현재 비어 있음
 │   └── <skill-name>/
 │       └── SKILL.md
 ├── setup.sh
