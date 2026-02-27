@@ -154,10 +154,9 @@ npx skills add microsoft/GitHub-Copilot-for-Azure -g -s <skill-name> -y
 
 ---
 
-## 기타 ([browser-use/browser-use](https://github.com/browser-use/browser-use), [intellectronica/agent-skills](https://github.com/intellectronica/agent-skills))
+## 기타 ([intellectronica/agent-skills](https://github.com/intellectronica/agent-skills))
 
 ```bash
-npx skills add browser-use/browser-use -g -y
 npx skills add intellectronica/agent-skills -g -s beautiful-mermaid -y
 ```
 
