@@ -38,36 +38,6 @@ docs/{agent|agents}/sync-governance.md
 - 모듈 문서는 프로젝트 분석 근거가 있는 항목만 생성됩니다.
 - `CLAUDE.md`는 `@AGENTS.md`를 연결하는 진입 파일이며, 실제 기본 지침은 `AGENTS.md`입니다.
 
-## 스킬 목록
-
-이 레포는 현재 내부(자체) 스킬을 운영하지 않습니다.
-스킬 관리는 외부 스킬만 대상으로 하며, 기준 문서는 [SKILL-CATALOG.md](./SKILL-CATALOG.md)입니다.
-스킬 설치/업데이트는 카탈로그의 레포별 명령을 사용하세요.
-
-## 구조
-
-```text
-agent-toolkit/
-├── docs/
-│   └── prompts/
-│       └── create-agent-guide-document.md
-├── hooks/
-│   ├── auto-format.js
-│   ├── console-log-check.js
-│   ├── session-start.js
-│   ├── session-end.js
-│   ├── suggest-compact.js
-│   └── typescript-check.js
-├── rules/
-│   └── security.md
-├── skills/             # 현재 비어 있음
-│   └── <skill-name>/
-│       └── SKILL.md
-├── setup.sh
-├── SKILL-CATALOG.md
-└── README.md
-```
-
 ---
 
 ## Rules & Hooks 설치
@@ -152,3 +122,35 @@ after_edit = "node ~/.agents/hooks/auto-format.js"
 | auto-format.js       | AfterTool (Edit)        | ESLint/Prettier 자동 포맷 (JS/TS)       |
 | typescript-check.js  | AfterTool (Edit)        | TS 파일 편집 후 타입 체크               |
 | console-log-check.js | AfterTool (Edit)        | console.log 감지 및 경고                |
+
+---
+
+## 스킬 목록
+
+이 레포는 현재 내부(자체) 스킬을 운영하지 않습니다.
+스킬 관리는 외부 스킬만 대상으로 하며, 기준 문서는 [SKILL-CATALOG.md](./SKILL-CATALOG.md)입니다.
+스킬 설치/업데이트는 카탈로그의 레포별 명령을 사용하세요.
+
+## 구조
+
+```text
+agent-toolkit/
+├── docs/
+│   └── prompts/
+│       └── create-agent-guide-document.md
+├── hooks/
+│   ├── auto-format.js
+│   ├── console-log-check.js
+│   ├── session-start.js
+│   ├── session-end.js
+│   ├── suggest-compact.js
+│   └── typescript-check.js
+├── rules/
+│   └── security.md
+├── skills/             # 현재 비어 있음
+│   └── <skill-name>/
+│       └── SKILL.md
+├── setup.sh
+├── SKILL-CATALOG.md
+└── README.md
+```
