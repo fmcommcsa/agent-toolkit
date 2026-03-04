@@ -2,6 +2,42 @@
 
 팀 공용 AI 에이전트 도구 모음입니다.
 
+## 에이전트 지침 생성 프롬프트 사용법
+
+프로젝트 지침 문서를 만들 때는 아래 프롬프트를 먼저 읽게 한 뒤, 분석/생성을 수행하도록 지시하세요.
+
+- 프롬프트 파일: [docs/prompts/create-agent-guide-document.md](./docs/prompts/create-agent-guide-document.md)
+
+권장 지시문(복붙용):
+
+```text
+docs/prompts/create-agent-guide-document.md 내용을 작업 규칙으로 먼저 읽고, 1~4단계를 순서대로 수행해. 추측 금지, 근거 파일 경로 필수, [확인 필요] 분리, 최종 출력 포맷 준수.
+```
+
+생성 결과물(파일):
+
+```text
+AGENTS.md
+CLAUDE.md
+
+docs/{agent|agents}/workflow.md
+docs/{agent|agents}/architecture.md
+docs/{agent|agents}/coding-standards.md
+docs/{agent|agents}/testing.md
+docs/{agent|agents}/api-interface.md
+docs/{agent|agents}/data-domain.md
+docs/{agent|agents}/security.md
+docs/{agent|agents}/deployment-verification.md
+docs/{agent|agents}/operations-runbook.md
+docs/{agent|agents}/sync-governance.md
+```
+
+참고:
+
+- `AGENTS.md`, `CLAUDE.md`는 항상 생성됩니다.
+- 모듈 문서는 프로젝트 분석 근거가 있는 항목만 생성됩니다.
+- `CLAUDE.md`는 `@AGENTS.md`를 연결하는 진입 파일이며, 실제 기본 지침은 `AGENTS.md`입니다.
+
 ## 스킬 목록
 
 이 레포는 현재 내부(자체) 스킬을 운영하지 않습니다.
@@ -12,6 +48,9 @@
 
 ```text
 agent-toolkit/
+├── docs/
+│   └── prompts/
+│       └── create-agent-guide-document.md
 ├── hooks/
 │   ├── auto-format.js
 │   ├── console-log-check.js
